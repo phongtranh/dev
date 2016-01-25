@@ -1,0 +1,5 @@
+@import "../app.css";
+
+body > .container-fluid {
+    padding: 0;
+}
