@@ -18,6 +18,9 @@ body > .container-fluid > .row > div {
 .menu-list {
     margin-bottom: 0;
 }
+.menu-list li {
+    position: relative;
+}
 .menu-list a {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -28,4 +31,15 @@ body > .container-fluid > .row > div {
 }
 .menu-list li:last-child a {
     border-bottom: 0;
+}
+.menu-list > li > a {
+    font-weight: bold;
+}
+.child-menu {
+    margin-bottom: 0;
+    list-style: none;
+}
+.child-menu li a {
+    border-bottom: 0;
+    padding-left: 40px;
 }

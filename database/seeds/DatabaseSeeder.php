@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use App\Article;
 
 class DatabaseSeeder extends Seeder {
 
@@ -14,7 +15,14 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		// $this->call('UserTableSeeder');
+		//$this->call('ArticleTableSeed');
+		$faker = Faker\Factory::create();
+		for($i = 0; $i < 100; $i++) {
+			Article::create([
+				'title'	=>	$faker->sentence,
+				'content'	=>	implode('', $faker->paragraphs(4))
+			]);
+		}
 	}
 
 }
