@@ -1,8 +1,0 @@
-/vendor
-/.env
-/node_modules
-.idea/workspace.xml
-.idea/watcherTasks.xml
-/.git
-/.idea
-/.phpintel
