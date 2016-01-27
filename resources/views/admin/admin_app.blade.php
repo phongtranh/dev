@@ -48,8 +48,36 @@
         </div>
     </div>
 </nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-default" id="main-sidebar">
+                <div class="panel-heading"><h5>DASHBOARD</h5></div>
+                <div class="panel-body">
+                    <ul class="list-group menu-list">
+                        <li><a href="#" class="list-group-item">Users</a>
+                            <ul class="list-group child-menu">
+                                <li><a class="list-group-item" href="#">List</a></li>
+                                <li><a class="list-group-item" href="#">Add new</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="list-group-item" href="#">Articles</a>
+                            <ul class="list-group child-menu">
+                                <li><a class="list-group-item" href="#">List</a></li>
+                                <li><a class="list-group-item" href="#">Add new</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="list-group-item" href="#">Setting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /sidebar -->
+        <div class="col-md-9">
+            @yield('content')
+        </div><!-- /content -->
+    </div>
+</div>
 
-@yield('content')
 
         <!-- Scripts -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

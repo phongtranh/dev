@@ -19,3 +19,9 @@ Route::controllers([
 ]);
 
 Route::get('/admin', 'AdminController@index');
+
+Route::get('/admin/articles', 'ArticleController@index');
+Route::get('/admin/article/{id}', [
+	'as'	=>	'article.show',
+	'uses'		=>	'ArticleController@show'
+]);
